@@ -27,16 +27,16 @@ nav {
 
 ul {
   display: flex;
+  padding: 10px;
+}
+
+nav li {
+  padding: 10px;
   list-style: none;
-  padding: 10px;
 }
 
-li {
-  padding: 10px;
-}
-
-a,
-a:visited {
+nav a,
+nav a:visited {
   text-decoration: none;
   color: black;
 }
@@ -115,6 +115,7 @@ h1 {
 
 .auteur {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .intro,
@@ -136,4 +137,59 @@ h1 {
   font-size: 0.8rem;
   padding: 20px;
   margin: 10px;
+}
+
+/* footer */
+
+footer {
+  background: #5b359d;
+}
+
+.name {
+  padding-top: 30px;
+  color: white;
+  font-weight: lighter;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+}
+
+.reseau {
+  list-style: none;
+}
+
+.reseaux i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.8rem;
+  margin-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.help {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.liste {
+  display: flex;
+  flex-direction: column;
+}
+
+.help h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.help ul {
+  color: white;
+  padding-left: 30px;
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
