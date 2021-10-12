@@ -16,44 +16,48 @@
 }
 
 /* Header */
-header {
+.top {
   display: flex;
   justify-content: space-between;
 }
 
-nav {
+.navigation {
   padding: 20px 0;
 }
 
-ul {
+.navigation ul {
   display: flex;
   padding: 10px;
 }
 
-nav li {
+.navigation li {
   padding: 10px;
   list-style: none;
 }
 
-nav a,
-nav a:visited {
+.navigation a,
+.navigation a:visited {
   text-decoration: none;
   color: black;
 }
 
 /* Partie main */
 
-main {
-  position: relative;
-}
-
 /*  Section 1 */
+
+.section1 {
+  position: relative;
+  height: 550px;
+  width: 100%;
+}
 
 .background {
   position: absolute;
   z-index: -1;
-  height: 600px;
+  top: 0;
+  bottom: 0;
   width: 100%;
+  height: 100%;
 }
 
 .container2 {
@@ -62,15 +66,15 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 600px;
+  height: 100%;
 }
-.logo {
+.logoBanner {
   width: 200px;
   height: 70px;
   margin: 20px;
 }
 
-h1 {
+.title {
   color: white;
   text-align: center;
   font-weight: 200;
@@ -84,18 +88,22 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 600px;
 }
 
 .intro {
   color: rgb(87, 87, 87);
   font-size: 1.5rem;
+  width: 800px;
+  height: 100%;
   text-align: center;
 }
 
 .listeSkills {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  width: 800px;
+  height: 100%;
 }
 
 .skills {
@@ -106,6 +114,8 @@ h1 {
 .avis {
   text-align: center;
   color: rgb(87, 87, 87);
+  width: 800px;
+  height: 100%;
 }
 
 .text {
@@ -121,10 +131,6 @@ h1 {
 .intro,
 .listeSkills {
   margin-top: 30px;
-  max-width: 800px;
-}
-.avis {
-  max-width: 800px;
 }
 
 .style {
@@ -181,7 +187,7 @@ footer {
   flex-direction: column;
 }
 
-.help h3 {
+.title3 {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1rem;
   font-weight: lighter;
@@ -192,4 +198,87 @@ footer {
   padding-left: 30px;
   font-size: 1rem;
   margin-bottom: 30px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 400px) {
+  /* Header */
+
+  .logoHeader {
+    width: 175px;
+  }
+
+  .navigation {
+    padding: 0;
+    margin: auto 0;
+  }
+
+  /* Section 1 */
+
+  .section1 {
+    height: auto;
+  }
+
+  .logoBanner {
+    display: none;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .title {
+    color: black;
+    font-weight: 600;
+    font-size: 3.2rem;
+    top: 30px;
+    margin: 50px 0;
+    padding: 30px;
+  }
+
+  /* Section 2 */
+
+  .presentation {
+    height: auto;
+  }
+
+  .intro {
+    width: 100%;
+    padding: 0;
+    margin: 50px 0;
+  }
+
+  .listeSkills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .avis {
+    width: 100%;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .reseaux {
+    margin: 30px 0;
+  }
+
+  .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title3 {
+    margin: 10px 0;
+  }
 }
