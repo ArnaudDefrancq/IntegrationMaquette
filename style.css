@@ -16,7 +16,7 @@
 }
 
 /* Header */
-.top {
+.headerTop {
   display: flex;
   justify-content: space-between;
 }
@@ -74,7 +74,7 @@
   margin: 20px;
 }
 
-.title {
+.title1 {
   color: white;
   text-align: center;
   font-weight: 200;
@@ -99,19 +99,19 @@
   text-align: center;
 }
 
-.listeSkills {
+.groupSkill {
   display: flex;
   justify-content: space-around;
   width: 800px;
   height: 100%;
 }
 
-.skills {
+.skill {
   text-align: center;
   margin: 10px;
 }
 
-.avis {
+.opinion {
   text-align: center;
   color: rgb(87, 87, 87);
   width: 800px;
@@ -123,13 +123,13 @@
   margin-top: 30px;
 }
 
-.auteur {
+.author {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .intro,
-.listeSkills {
+.groupSkill {
   margin-top: 30px;
 }
 
@@ -159,16 +159,14 @@ footer {
   text-align: center;
 }
 
-.reseaux {
+.networks {
+  list-style: none;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
-.reseau {
-  list-style: none;
-}
-
-.reseaux i {
+.networks i {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.8rem;
   margin-top: 30px;
@@ -182,9 +180,10 @@ footer {
   margin-top: 30px;
 }
 
-.liste {
+.listing {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 .title3 {
@@ -202,7 +201,7 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   /* Header */
 
   .logoHeader {
@@ -228,7 +227,7 @@ footer {
     display: none;
   }
 
-  .title {
+  .title1 {
     color: black;
     font-weight: 600;
     font-size: 3.2rem;
@@ -249,7 +248,7 @@ footer {
     margin: 50px 0;
   }
 
-  .listeSkills {
+  .groupSkill {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -257,7 +256,7 @@ footer {
     margin: auto 0;
   }
 
-  .avis {
+  .opinion {
     width: 100%;
   }
 
@@ -268,7 +267,7 @@ footer {
     height: auto;
   }
 
-  .reseaux {
+  .networks {
     margin: 30px 0;
   }
 
@@ -279,6 +278,16 @@ footer {
   }
 
   .title3 {
-    margin: 10px 0;
+    margin: 10px 30px;
+  }
+
+  .listing {
+    margin: 0 35px;
+  }
+
+  .access,
+  .about,
+  .contact {
+    width: 200px;
   }
 }
